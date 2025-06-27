@@ -1,0 +1,7 @@
+resources:
+  - ../pipeline/stream/producer.yaml
+  - ../pipeline/stream/consumer.yaml
+configMapGenerator:
+  - name: configs
+    files:
+      - ../pipeline/configs/*.json

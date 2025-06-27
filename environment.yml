@@ -1,0 +1,22 @@
+name: geok
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip: 
+    - -r requirements.txt
+  - bayesian-optimization
+  - boto3
+  - dvc
+  - dython
+  - ipykernel
+  - confluent-kafka
+  - make
+  - minikube
+  - pycaret
+  - pyspark
+  - scikit-optimize
+  - seaborn
+  - sklearn-genetic-opt
+  - kubectl

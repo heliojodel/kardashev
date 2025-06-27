@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: producer-{{ .Values.streamName }}
+  labels:
+    stream: {{ .Values.streamName }}
+spec:
+  template:
+    spec:
+      containers:
+      - name: producer
+        image: your-registry/producer:latest
+        args: ["/configs/{{ .Values.streamName }}.json"]
+        env:
+          - name: KAFKA_BROKER
+            value: {{ .Values.kafkaBroker }}
+          - name: KONTUR_ACCESS_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: api-tokens
+                key: kontur-token
+        volumeMounts:
+          - name: configs
+            mountPath: /configs
+      volumes:
+        - name: configs
+          configMap:
+            name: stream-configs
