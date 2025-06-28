@@ -76,4 +76,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) for d
 
 ## Contact
 
-For questions or feedback, please contact at jodel@tuta.com.
+For questions or feedback, please contact at jodelfernandes@protonmail.com.
