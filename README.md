@@ -62,6 +62,10 @@ A production data science platform processing planetary data
 
 Soon...
 
+[![Geokrum Wildfire Dashboard](docs/renewable.png)](https://app.powerbi.com/view?r=eyJrIjoiOTYyYWE5ZjEtNGM0Yi00YmE1LWFiNzgtMjBiYzMxOWY5YmFkIiwidCI6IjUzZDc2Y2UwLTBkNTMtNGJiYy1iZjQ2LTE0ZTdiNGJmMzJhMiIsImMiOjl9)
+
+*Click to interact with the preview dashboard.*
+
 ## Contributing
 
 Please submit a pull request. For major changes, please open an issue first for discussion.
