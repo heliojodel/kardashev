@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.11
+  - pip
   - pip: 
     - -r requirements.txt
   - bayesian-optimization
@@ -11,7 +12,7 @@ dependencies:
   - dvc
   - dython
   - ipykernel
-  - confluent-kafka
+  - python-confluent-kafka
   - make
   - minikube
   - pycaret
@@ -19,4 +20,3 @@ dependencies:
   - scikit-optimize
   - seaborn
   - sklearn-genetic-opt
-  - kubectl

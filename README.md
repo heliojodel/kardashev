@@ -10,6 +10,7 @@ A production data science platform processing planetary data
 - [Conda](https://www.anaconda.com/download/success)
 - [Docker](https://docs.docker.com/desktop/setup/install)
 - [Terraform](https://developer.hashicorp.com/terraform/install)
+- [Kubernetes](https://kubernetes.io/releases/download/)
 
 ## Installation
 
