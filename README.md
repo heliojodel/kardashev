@@ -30,7 +30,7 @@ A production data science platform processing planetary data
 
 3. **Set up environment variables**
 
-   Create an IAM user with S3 access at [AWS](https://aws.amazon.com/), generate a PAT in your workspace at [Databricks](https://databricks.com/) and set up the [API](https://www.kontur.io/solutions/event-feed/api-access/) token (*optional: use a cloud Kafka broker*)
+   Create a PAT in your workspace at [Databricks](https://databricks.com/), an IAM user (or role with an instance profile) with S3 access at [AWS](https://aws.amazon.com/) and set up the [API](https://www.kontur.io/solutions/event-feed/api-access/) token (*optional: use a cloud Kafka broker*)
 
    ```bash
    cp .env.example .env
