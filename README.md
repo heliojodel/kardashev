@@ -4,11 +4,13 @@
 
 A production data science platform processing planetary data
 
+![architecture](docs/archi.png)
+
 ## Prerequisites
 
 - [Git](https://git-scm.com/downloads)
 - [Conda](https://www.anaconda.com/download/success)
-- [Docker](https://docs.docker.com/desktop/setup/install)
+- [Docker](https://docs.docker.com/desktop/)
 - [Terraform](https://developer.hashicorp.com/terraform/install)
 - [Kubernetes](https://kubernetes.io/releases/download/)
 
@@ -28,24 +30,19 @@ A production data science platform processing planetary data
    conda activate geok
    ```
 
-3. **Set up environment variables**
+3. **Initialize data pipeline**
 
    Create a PAT in your workspace at [Databricks](https://databricks.com/), an IAM user (or role with an instance profile) with S3 access at [AWS](https://aws.amazon.com/) and set up the [API](https://www.kontur.io/solutions/event-feed/api-access/) token (*optional: use a cloud Kafka broker*)
 
    ```bash
+   cd deployment
    cp .env.example .env
    ```
 
-   Edit .env with your credentials
+   Edit .env with your credentials (*optional: use a cloud Kafka broker*)
    
    ```bash
    source .env
-   ```
-
-4. **Initialize the pipeline**
-
-   ```bash
-   cd deployment
    docker compose up -d
    ```
 
@@ -63,7 +60,7 @@ A production data science platform processing planetary data
 
 Soon...
 
-[![Geokrum Wildfire Dashboard](docs/renewable.png)](https://app.powerbi.com/view?r=eyJrIjoiOTYyYWE5ZjEtNGM0Yi00YmE1LWFiNzgtMjBiYzMxOWY5YmFkIiwidCI6IjUzZDc2Y2UwLTBkNTMtNGJiYy1iZjQ2LTE0ZTdiNGJmMzJhMiIsImMiOjl9)
+[![dashboard](docs/renewable.png)](https://app.powerbi.com/view?r=eyJrIjoiOTYyYWE5ZjEtNGM0Yi00YmE1LWFiNzgtMjBiYzMxOWY5YmFkIiwidCI6IjUzZDc2Y2UwLTBkNTMtNGJiYy1iZjQ2LTE0ZTdiNGJmMzJhMiIsImMiOjl9)
 
 *Click to interact with the preview dashboard.*
 

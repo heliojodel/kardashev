@@ -11,9 +11,6 @@ __pycache__/
 # Environment
 .env
 
-# Data
-data/
-
 # IDE
 .vscode/
 
