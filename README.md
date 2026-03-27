@@ -1,4 +1,4 @@
-# Geokrum
+# Kardashev
 
 ## Overview
 
@@ -19,15 +19,15 @@ A production data science platform processing planetary data
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/bepnga/geokrum.git
-   cd geokrum
+   git clone https://github.com/heliojodel/kardashev.git
+   cd kardashev
    ```
 
 2. **Set up the environment**
 
    ```bash
    conda env create -f environment.yml
-   conda activate geok
+   conda activate geo
    ```
 
 3. **Initialize data pipeline**
